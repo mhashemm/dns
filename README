@@ -1,0 +1,11 @@
+https://datatracker.ietf.org/doc/html/rfc1035
+https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml
+https://www.iana.org/domains/root/servers
+https://www.iana.org/domains/root
+https://www.internic.net/domain/root.zone
+https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/
+https://datatracker.ietf.org/doc/html/rfc8484#section-5.2
+
+
+docker buildx build . -t dns
+docker run -p 3535:53/udp -t dns
